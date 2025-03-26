@@ -1,0 +1,60 @@
+.calendar-main-container{
+    text-align: center;
+    min-height: 600px;
+    padding: 20px;
+    border-radius: 12px;
+    width: 100%;
+}
+
+.calendar-container{
+    height: 500px;
+    margin: 20px;
+}
+
+.rbc-toolbar-label{
+    background-color: rgb(230, 230, 230);
+    font-weight:  bold;
+    color: rgb(107, 107, 107);
+}
+
+.rbc-day-bg{
+    cursor: pointer;
+}
+
+.rbc-date-cell:hover{
+    background-color: aliceblue;
+
+}
+
+.rbc-day-bg:hover{
+    background-color: aliceblue;
+}
+
+@media (max-width: 768px) {
+    div[style*="minHeight: 600px"] {
+      min-height: auto; /* Adjust minimum height for smaller screens */
+      padding: 10px; /* Reduce padding */
+    }
+
+    div[style*="width: 100%"] {
+      height: 400px; /* Adjust calendar height for smaller screens */
+    }
+
+    .rbc-calendar {
+      font-size: 12px; /* Smaller font size for better readability on small devices */
+    }
+  }
+
+  @media (max-width: 480px) {
+    div[style*="width: 100%"] {
+      height: 100px; /* Further adjust calendar height for very small screens */
+    }
+
+    .rbc-calendar {
+      font-size: 10px; /* Further reduce font size */
+    }
+
+    .rbc-toolbar{
+        font-size: 10px;
+    }
+  }

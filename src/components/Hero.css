@@ -1,0 +1,212 @@
+.hero-container{
+    padding: 25px 100px;
+    width: 100%;
+    min-height: 80vh;
+    background-color: #f2f2f2;
+}
+
+.hero-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 40%;
+}
+
+.right{
+    display: flex;
+    justify-content: center;
+    width: 40%;
+}
+
+.right img{
+    animation: upDown 5s ease-in-out infinite;
+}
+
+@keyframes upDown {
+    0% {
+      transform: translateY(0); /* Initial position */
+    }
+    50% {
+      transform: translateY(30px); /* Move up smoothly */
+    }
+    100% {
+      transform: translateY(0); /* Return to initial position */
+    }
+  }
+
+.left h2{
+  font-family: "Indie Flower", cursive;
+  font-weight: bold;
+  font-style: normal;
+  font-size: 45px;
+  color: #37373f;
+}
+
+.left p{
+    font-weight: 300;
+    font-style: normal;
+    font-size: 19px;
+    color: #7f8393;
+
+}
+
+.hero-btn button{
+    background-color: #ce1212;
+    color: #fef6f6;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 50px;
+    font-weight: 400;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+
+  .hero-btn button:hover{
+    background-color: #dd4c4c;
+  }
+
+  @media screen and (max-width: 1060px){
+    .hero-container{
+      min-height: 60vh;
+    }
+
+    .hero-content{
+      display: flex;
+      flex-direction: column;
+      flex-direction: column-reverse;
+    }
+
+    .left{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .left h2{
+      font-weight: 500;
+      font-style: normal;
+      font-size: 33px;
+      color: #37373f;
+  }
+
+  .left p{
+    font-weight: 300;
+    font-style: normal;
+    font-size: 17px;
+    color: #7f8393;
+}
+
+  .left{
+    margin-top: 40px;
+  }
+
+  .right{
+    height: 100%;
+    width: 70%;
+  }
+
+  .hero-btn button{
+    padding: 8px 26px;
+    font-weight: 400;
+    font-size: 14px;
+  }
+
+  }
+
+  @media screen and (max-width: 825px){
+  .left h2{
+      font-weight: 500;
+      font-style: normal;
+      font-size: 23px;
+      color: #37373f;
+  }
+
+  .left p{
+    font-weight: 300;
+    font-style: normal;
+    font-size: 15px;
+    color: #7f8393;
+}
+
+.hero-btn button{
+  padding: 6px 23px;
+  font-weight: 400;
+  font-size: 12px;
+}
+
+.hero-container{
+  min-height: 70vh;
+}
+  }
+
+  @media screen and (max-width: 700px){
+    .hero-container{
+      padding: 25px 50px;
+    }
+  }
+
+
+  @media screen and (max-width: 550px){
+
+    .left h2{
+        font-weight: 500;
+        font-style: normal;
+        font-size: 16px;
+        color: #37373f;
+    }
+  
+    .left p{
+      font-weight: 300;
+        font-style: normal;
+        font-size: 11px;
+        color: #7f8393;
+        letter-spacing: 1px;
+  }
+  
+  .hero-btn button{
+    padding: 4px 17px;
+    font-weight: 400;
+    font-size: 9px;
+  }
+
+  .hero-container{
+    min-height: 50vh;
+  }
+    }
+
+    @media screen and (max-width: 400px){
+      .left h2{
+          font-weight: 500;
+          font-style: normal;
+          font-size: 13px;
+          color: #37373f;
+      }
+    
+      .left p{
+        font-weight: 300;
+        font-style: normal;
+        font-size: 10px;
+        color: #7f8393;
+    }
+    
+    .hero-btn button{
+      padding: 4px 17px;
+      font-weight: 400;
+      font-size: 8px;
+    }
+  
+    .hero-container{
+      min-height: 50vh;
+    }
+      }
+  
+

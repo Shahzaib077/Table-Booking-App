@@ -1,0 +1,200 @@
+.menu-container{
+    margin-top: 30px;
+    padding: 25px 100px;
+    width: 100%;
+    min-height: 80vh;
+}
+
+.title-section{
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.title-section h2{
+    color: #9c9ca9;
+    font-size: 12px;
+    letter-spacing: 1px;
+    font-weight: 400;
+}
+
+.title-section p{
+    font-family: "Indie Flower", cursive;
+    font-size: 32px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+.title-section p span{
+    font-family: "Indie Flower", cursive;
+}
+.menu-item-container{
+    margin-top: 50px;
+}
+.menu-item-container ul{
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+}
+
+.menu-shift{
+    position: relative;
+    font-size: 21px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.menu-shift::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 100%;
+    background-color: #a5a5a5; /* Active line color */
+    transition: width 0.3s ease, left 0.3s ease;
+    margin-top: 1px;
+}
+
+.menu-shift:hover::after{
+    background-color: #ce1212;
+    width: 100%;
+    left: 0;
+    transition: all 0.5s ease;
+
+  }
+
+.menu-shift.active-tab::after {
+    background-color: #ce1212;
+    width: 100%;
+    left: 0;
+  }
+
+.tab-header{
+    text-align: center;
+    margin-top: 25px;
+}
+
+.tab-header p{
+    color: #9c9ca9;
+    font-size: 15px;
+    letter-spacing: 1px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.tab-header h3{
+    font-family: "Indie Flower", cursive;
+    font-size: 32px;
+    margin-top: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #ce1212;
+}
+
+/* Menu items from Api */
+.menu-items-columns{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.recipie{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 40px;
+    text-align: center;
+}
+.recipie img{
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
+    transition: all 0.5s ease;
+    cursor: pointer;
+    margin-bottom: 7px;
+}
+
+.recipie h5{
+    font-size: 15.6px;
+    font-weight: 600;
+    color: rgb(39, 39, 39);
+}
+
+.recipie p{
+    color: #9c9ca9;
+    font-size: 12px;
+    word-wrap: break-word;
+    width: 290px;
+}
+
+.recipie img:hover{
+    transform: translateZ(20px) scale(0.93);
+}
+
+@media screen and (max-width: 1000px){
+
+    .recipie{
+        margin: 18px 15px;
+    }
+    .recipie img{
+        width: 250px;
+        height: 250px;
+    }
+    
+    .recipie p{
+        font-size: 10px;
+    }
+
+    .recipie h5{
+        font-size: 12px;
+    }
+}
+
+
+@media screen and (max-width: 825px){
+    .title-section h2{
+        font-size: 9px;
+    }
+    
+    .title-section p{
+        font-size: 22px;
+    
+    }
+
+    .tab-header p{
+        font-size: 9px;
+    }
+
+    .tab-header h3{
+        font-size:22px;
+    }
+
+}
+
+@media screen and (max-width: 700px){
+    .menu-container{
+        padding: 25px 50px;
+    }
+}
+
+
+@media screen and (max-width: 525px){
+
+
+.menu-shift{
+    font-size: 17px;
+}
+
+.recipie img{
+    width: 280px;
+    height: 280px;
+}
+
+.recipie p{
+    word-wrap: break-word;
+    width: 270px;
+}
+}
+
+

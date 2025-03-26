@@ -1,0 +1,266 @@
+.book-table-container{
+    margin-top: 30px;
+    padding: 25px 100px;
+    width: 100%;
+    min-height: 80vh;
+}
+
+.book-table-title{
+    text-align: center;
+}
+
+.book-table-title h2{
+    color: #9c9ca9;
+    font-size: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.book-table-title p span{
+    font-family: "Indie Flower", cursive;
+    font-size: 32px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+/* Form and Image */
+.book-main-section {
+    display: flex;
+    width: 100%;
+    min-height: 500px;
+    margin: 0 auto;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    margin-top: 50px;
+  }
+  
+  .book-img-container {
+    width: 40%; 
+    background-image: url('../assets/images/book-img.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  .book-form-container {
+    flex: 1; /* Form takes the remaining space */
+    padding: 20px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .inputFields {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Two-column layout for input fields */
+    gap: 18px;
+  }
+  
+  .fields input,
+  .message textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s ease;
+  }
+
+  .message textarea{
+    margin-top: 20px;
+  }
+  
+  .fields input:focus,
+  .message textarea:focus {
+    border-color: #007bff;
+  }
+  
+  .message textarea {
+    resize: none;
+  }
+  
+.bookBtn{
+    display: block;
+    width: 100%;
+    margin: auto;
+    margin-top: 10px;
+    padding: 12px;
+    font-size: 16px;
+    color: #fff;
+    background-color:#ce1212;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+.bookBtn:hover {
+    background-color: #dd4c4c;
+  }
+
+/* Bookings on Calender */
+.current-calendar{
+    margin-top: 40px;
+}
+.current-title{
+    text-align: center;
+}
+
+.current-title h2{
+    color: #9c9ca9;
+    font-size: 20px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.bookings{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #f2f2f2;
+    min-width: 100%;
+    margin-bottom: 50px;
+}
+
+.all-bookings{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 30px;
+}
+
+.your-bookings{
+    padding: 30px;
+}
+
+.your-bookings table{
+  width: 100%;
+}
+
+th, td{
+  border: 1px solid #CDCECF;
+  padding: 20px;
+}
+
+.del-edit{
+  background-color: #dfdfdf;
+}
+
+.del-edit span{
+  margin: 0px 5px;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+.del-edit span:first-child{
+  color: #ce1212;
+}
+
+.del-edit span:nth-child(2){
+  color: rgb(0, 180, 0);
+}
+
+.slot-table th{
+  font-size: 15px;
+  font-weight: bold;
+}
+
+
+  
+  @media screen and (max-width: 1300px){
+    .fields input,
+    .message textarea {
+        padding: 9px;
+        font-size: 9px;
+  }
+
+  .book-main-section{
+    min-height: 300px;
+  }
+
+}
+
+@media screen and (max-width: 825px){
+    .book-table-title h2{
+        font-size: 9px;
+    }
+
+    .book-table-title p span{
+        font-size: 22px;
+    }
+
+    .slot-table th{
+      font-size: 10px;
+      font-weight: bold;
+    }
+}
+
+@media screen and (max-width: 965px){
+  td{
+    font-size: 8px;
+    font-weight: 500;
+  }
+  th, td{
+    padding: 15px;
+  }
+}
+
+@media screen and (max-width: 807px){
+ 
+  th, td{
+    padding: 12px;
+  }
+}
+
+  @media screen and (max-width: 900px){
+    .book-main-section {
+        display: flex;
+        flex-direction: column;
+  }
+
+  .book-img-container{
+    width: 100%;
+    height: 250px;
+  }
+
+  .inputFields{
+    gap: 7px;
+  }
+}
+
+@media screen and (max-width: 700px){
+
+    .inputFields {
+        grid-template-columns: 1fr; /* Two-column layout for input fields */
+
+      }
+
+    .book-table-container{
+        padding: 25px 50px;
+    }
+}
+
+
+@media (max-width: 768px) {
+  .your-bookings table {
+    font-size: 11px; /* Smaller font for smaller screens */
+  }
+  .your-bookings td,
+  .your-bookings th {
+    padding: 8px; /* Adjust padding for compact view */
+  }
+}
+
+@media (max-width: 480px) {
+  .your-bookings{
+    width: 70%;
+  }
+  .your-bookings table {
+    font-size: 10px; /* Compact font size */
+  }
+}

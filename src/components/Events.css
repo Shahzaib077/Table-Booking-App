@@ -1,0 +1,67 @@
+.event-img1{
+    background-image: url('../assets/images/events-1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    margin-top: 25px;
+}
+
+.event-img2{
+    background-image: url('../assets/images/events-2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    margin-top: 25px;
+}
+
+.event-img3{
+    background-image: url('../assets/images/events-3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    margin-top: 25px;
+}
+
+.event-img4{
+    background-image: url('../assets/images/events-4.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    margin-top: 25px;
+}
+
+
+.event-overlay{
+    width: 100%;
+    height: 600px;
+    background-color: rgba(0, 0, 0, 0.486);
+    position: relative;
+}
+
+.content{
+    position: fixed;
+    bottom: 10px;
+    color: white;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.content h4{
+    font-family: "Indie Flower", cursive;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.content div{
+    font-size: 30px;
+    font-weight: bold;
+}
+.carousel-container {
+    direction: rtl;
+  }
+  
+  .carousel-container .react-multi-carousel-item {
+    transform: scale(1); /* Prevent unwanted scaling in reversed direction */
+  }

@@ -1,0 +1,238 @@
+.about-container{
+    padding: 25px 100px;
+    width: 100%;
+    min-height: 80vh;
+    margin-top: 20px;
+}
+
+.about-content{
+ text-align: center;
+}
+
+.about-content h2{
+    text-transform: uppercase;
+    color: #9c9ca9;
+    font-size: 12px;
+    letter-spacing: 1px;
+    font-weight: 400;
+}
+
+.about-content p:nth-child(2){
+    font-family: "Indie Flower", cursive;
+    font-size: 30px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    font-weight: 300;
+
+}
+
+.about-content p span{
+    font-family: "Indie Flower", cursive;
+
+}
+
+.more-about{
+    display: flex;
+    margin-top: 55px;
+}
+
+/* Left Container */
+.leftContainer{
+    width: 60%;
+}
+
+.leftContainer img{
+    width: 100%;
+    height: auto;
+}
+
+.contactBook{
+    border: 4px solid #636668;
+    margin-top: 1.5rem;
+    padding: 20px 0px;
+}
+
+.contactBook p:nth-child(2){
+    margin-top: 0;
+    font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    color: #ce1212;
+}
+
+.contactBook h3{
+    font-size: 25px;
+    font-weight: bold;
+    color: #5c373f;
+}
+
+/* Right Container */
+.rightContainer{
+    width: 40%;
+    text-align: left;
+    padding-left: 50px;
+}
+
+.rightContainer p:first-child{
+    margin-top: 0;
+    font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+    font-style: italic;
+    font-size: 14px;
+    font-weight: 400;
+    color: #8e8e9d;
+}
+
+.rightContainer p:nth-child(3){
+    margin-top: 23px;
+    font-size: 14px;
+    text-align: justify;
+}
+.rightContainer ul{
+    margin-top: 15px;
+}
+
+.rightContainer img{
+    width: 100%;
+    height: auto;
+    margin-top: 23px;
+}
+
+.rightContainer ul li{
+    display: flex;
+    gap: 10px;
+}
+
+.rightContainer ul li span:first-child{
+    color: #ce1212;
+    font-weight: bold;
+}
+
+.rightContainer ul li span:nth-child(2){
+    font-size: 15px;
+}
+
+.stats{
+    background-image: url('../assets/images/stats-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    min-height: 300px;
+    margin-top: 25px;
+}
+
+.overlay{
+    width: 100%;
+    height: 400px;
+    background-color: rgba(0, 0, 0, 0.486);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.show-stats{
+    margin: 0 7rem;
+    text-align: center;
+}
+
+.show-stats h1:first-child{
+    font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+
+}
+
+.show-stats p:nth-child(2){
+    font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    color: #b1b2b4;
+
+}
+
+@media screen and (max-width: 1010px){
+
+.more-about{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.leftContainer{
+    width: 100%;
+}
+.rightContainer{
+    width: 100%;
+    padding: 0;
+    margin-top: 20px;
+}
+
+}
+
+@media screen and (max-width: 825px){
+    .about-content h2{
+        font-size: 9px;
+    }
+    
+    .about-content p:nth-child(2){
+        font-size: 22px;
+    }
+    .rightContainer ul li span:nth-child(2){
+        font-size: 13px;
+    }
+
+    .rightContainer p:nth-child(3){
+        font-size: 13px;
+    }
+
+}
+
+@media screen and (max-width: 700px){
+    .about-container{
+        padding: 25px 50px;
+    }
+}
+
+
+@media screen and (max-width: 610px) {
+    .show-stats h1:first-child{
+        font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 550px){
+
+    .about-content h2{
+        font-size: 8px;
+    }
+    
+    .about-content p:nth-child(2){
+        font-size: 16px;
+    
+    }
+
+    .rightContainer ul li span:nth-child(2){
+        font-size: 12px;
+    }
+
+    .rightContainer p:nth-child(3){
+        font-size: 12px;
+    }
+
+    .rightContainer p:first-child{
+        font-size: 13px;
+    }
+
+    .about-content p:nth-child(2){
+        margin-top: 12px;
+    }
+
+    .more-about{
+        margin-top: 28px;
+    }
+
+}
+
+
