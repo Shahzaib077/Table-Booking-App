@@ -8,12 +8,14 @@ const About = () => {
   return (
     <>
     <div className="about-container" id="about">
-      <div className="about-content">
+      <div className="about-content-title">
         <h2>about us</h2>
         <p>
           learn more{" "}
           <span style={{ color: "#ce1212", fontWeight: "500" }}>about us</span>{" "}
         </p>
+        </div>
+
         <div className="more-about">
           <div className="leftContainer">
             <img src={aboutImg} />
@@ -67,7 +69,6 @@ const About = () => {
             <img src={about2Img} />
           </div>
         </div>
-      </div>
     </div>
     <div className="stats">
           <div className="overlay">

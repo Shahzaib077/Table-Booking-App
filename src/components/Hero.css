@@ -34,7 +34,7 @@
       transform: translateY(0); /* Initial position */
     }
     50% {
-      transform: translateY(30px); /* Move up smoothly */
+      transform: translateY(33px); /* Move up smoothly */
     }
     100% {
       transform: translateY(0); /* Return to initial position */

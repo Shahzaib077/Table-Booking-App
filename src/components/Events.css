@@ -65,3 +65,33 @@
   .carousel-container .react-multi-carousel-item {
     transform: scale(1); /* Prevent unwanted scaling in reversed direction */
   }
+
+@media  screen and (max-width:840px) {
+    .event{
+        height: 300px;
+    }
+
+    .content{
+        position: fixed;
+        bottom: 10px;
+        color: white;
+        padding: 25px;
+        gap: 6px;
+    }
+    
+    .content h4{
+        font-family: "Indie Flower", cursive;
+        font-weight: bold;
+        font-size: 15px;
+    }
+    
+    .content div{
+        font-size: 23px;
+        font-weight: bold;
+    }
+
+    .content p{
+        font-size: 13px;
+    }
+    
+}

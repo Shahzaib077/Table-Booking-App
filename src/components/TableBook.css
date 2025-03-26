@@ -69,6 +69,11 @@
     transition: border-color 0.3s ease;
   }
 
+  .inputFields select{
+    padding: 12px;
+    font-size: 15px;
+  }
+
   .message textarea{
     margin-top: 20px;
   }
@@ -175,12 +180,20 @@ th, td{
   @media screen and (max-width: 1300px){
     .fields input,
     .message textarea {
-        padding: 9px;
-        font-size: 9px;
+        padding: 10px;
+        font-size: 10px;
   }
-
+  .inputFields select{
+    padding: 10px;
+    font-size: 10px;
+  }
   .book-main-section{
     min-height: 300px;
+  }
+
+  .bookBtn{
+    padding: 9px;
+    font-size: 14px;
   }
 
 }

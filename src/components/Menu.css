@@ -77,7 +77,7 @@
 
 .tab-header p{
     color: #9c9ca9;
-    font-size: 15px;
+    font-size: 13px;
     letter-spacing: 1px;
     font-weight: 400;
     text-transform: uppercase;
@@ -170,6 +170,10 @@
         font-size:22px;
     }
 
+    .menu-shift{
+        font-size: 19px;
+    }
+
 }
 
 @media screen and (max-width: 700px){
@@ -178,13 +182,22 @@
     }
 }
 
+@media screen and (max-width: 550px){
+    .title-section h2{
+        font-size: 8px;
+    }
+
+    .title-section p{
+        font-size: 19px;
+    }
+
+    .menu-shift{
+        font-size: 17px;
+    }
+}
+
 
 @media screen and (max-width: 525px){
-
-
-.menu-shift{
-    font-size: 17px;
-}
 
 .recipie img{
     width: 280px;
